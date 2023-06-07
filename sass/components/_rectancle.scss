@@ -1,0 +1,14 @@
+.rectangle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-green;
+    color: $dark-green;
+   
+
+    &__small{
+        width: 7em;
+        height: 2em;
+        border-radius: 5px;     
+    }
+}

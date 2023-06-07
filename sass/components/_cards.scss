@@ -1,0 +1,149 @@
+.card {
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    box-sizing: border-box;        
+    img{
+        object-fit: cover;
+    }
+
+
+
+    &__fonctionnement{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        height: 5em;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        background-color: $lighter-grey;
+        transition: all .5s ease-in-out;
+
+        &:hover{
+            background-color: $primary-light-color;
+            & svg{
+                fill: $primary-color;
+            }    
+        }
+   
+        &__content{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            span{
+                margin-left:-.5em ;
+            }
+            svg{
+                
+                margin-left:1.2em;
+            }
+            p{
+                margin-left:10%;
+            }
+        } 
+        
+    }
+    
+    
+    &__restaurant{
+
+        width: 90%;
+        height: 18em;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      
+        &__content{
+            position: relative;
+            img{
+                z-index: 1;
+                width: 100%;
+                height: 13em;
+                border-radius: 15px 15px 0 0;
+            }
+            span{
+                position:absolute;
+                z-index: 2;
+                top: 3%;
+                right:3%;        
+            }
+            &__text{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin: -.25em 2em 0 1em;
+               
+                p{
+                    line-height: 24px;
+                    font-weight: 300;
+                }
+
+                &__icons{
+                    position: relative;
+                    right: 5%;
+                    top: -2vh;
+
+                    &:hover .heart-full{
+                        animation: heart-animation .5s;
+                        opacity:1;
+                    }           
+                }
+            }   
+        }
+    }  
+
+    &__menu{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 4.5em;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+
+        &__btn{        
+            height: 100%;
+            opacity: 0;
+            transition: all .5s;
+        }
+    
+        &:hover &__btn{
+            animation: slideLeft .5s ease-in-out;
+            opacity: 1;
+        }
+       
+        p{
+            position: relative;
+            top: 22%;
+            left: 4%;
+            width: 75%;
+            height: 100%;
+            line-height: 24px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: 300;
+            strong{
+                font-size: map-get($base-font-size, large );
+                font-weight: 500;
+            }           
+        }
+
+        &:hover p{
+            padding-right: 5em;
+        }
+        
+        span{
+            position: relative;
+            left: 10%;
+            top: 18%;
+            transition: all .5s;
+        }
+         
+        &:hover span{
+            transform: translateX(-3.4em);
+            animation: loading 1s ease-in-out;          
+        } 
+
+    } 
+
+}

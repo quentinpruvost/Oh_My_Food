@@ -1,0 +1,16 @@
+@import "./utils/variables";
+@import "./utils/keyframes";
+@import "./utils/mixins";
+@import "./base/base.scss";
+@import "./components/boutons";
+@import "./components/cards";
+@import "./components/circle";
+@import"./components/rectancle";
+@import "./components/formulaires";
+@import "./components/icons";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./pages/accueil.scss";
+@import "./pages/restaurants";
+@import "./pages/responsive";
+@import "./pages/loader";

@@ -1,0 +1,29 @@
+
+//* Colors *//
+$light-color: #ffff;
+$dark-color: black;
+
+$primary-color: #9356dc;
+$primary-light-color: #F5EDFF;
+$secondary-color: #FF79DA;
+$light-green: #99e2d0;
+$dark-green: #008766;
+
+$dark-blue: #003a68;
+$light-blue: #89c8fa;
+$gradient-color: linear-gradient(to top, $primary-color, $secondary-color);
+
+$dark-grey: #353535;
+$light-grey:  #eaeaea;
+$lighter-grey: #f7f7f7;
+
+//* Font-size *//
+$base-font-size:(
+    small: 14px,
+    small-x: 15px,
+    normal: 16px,
+    normal-x: 17px,
+    large: 18px,
+    large-x: 26px,
+    big: 30px
+)

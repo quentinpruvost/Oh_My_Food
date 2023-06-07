@@ -1,0 +1,63 @@
+svg{
+    color: $primary-color;
+}
+
+.heart{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    fill: $dark-grey;
+    transition: all .5s ease-in-out;
+
+    &:hover{
+        opacity: 0;      
+    } 
+}
+
+.heart-full{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    transition: all .5s ease-in-out; 
+}
+
+.icon-location{
+    width: 18px;
+    height: 18px;
+    }
+.icon-arrow{
+    width: 18px;
+    height: 18px;
+}
+.icon-check{
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+.icon-utensil{
+    width: 14px;
+    height: 14px;
+    fill: white;
+}
+.icon-handshake{
+    width: 14px;
+    height: 14px;
+    fill: white;
+}
+.icon-mobile{
+    fill: grey;
+    width: 18px;
+    height: 18px;
+}
+.icon-list{
+    fill: grey;
+    width: 18px;
+    height: 18px;
+}
+.icon-store{
+    fill: grey;
+    width: 18px;
+    height: 18px;
+}
+
