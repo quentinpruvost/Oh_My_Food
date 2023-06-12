@@ -24,40 +24,7 @@
     transform: scale(1);
   }
 }
-@keyframes loading {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes loader {
-  99% {
-    transform: scale(0);
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-@keyframes loadingColor {
-  0% {
-    color: white;
-  }
-  25% {
-    color: red;
-  }
-  50% {
-    color: chartreuse;
-  }
-  75% {
-    color: deeppink;
-  }
-  100% {
-    color: lightsalmon;
-  }
-}
+
 body {
   font-family: Roboto, sans-serif;
   font-size: 18px;
