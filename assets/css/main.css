@@ -3,23 +3,18 @@
     transform: translateY(-200px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0px);
     opacity: 1;
   }
 }
-@keyframes slideLeft {
-  0% {
-    transform: translateX(25px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
+
 @keyframes heart-animation {
   0% {
     transform: scale(0);
   }
+
   100% {
     transform: scale(1);
   }
@@ -72,28 +67,33 @@ ul {
   transition: all 0.5s;
   font-size: 16px;
 }
+
 .btn__explore {
   background: linear-gradient(to top, #9356dc, #FF79DA);
   width: 15em;
   height: 3.5em;
   margin-top: 20px;
-  box-shadow: 0px 10px 16px rgba(0, 0, 0,.25);
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, .25);
 
 }
+
 .btn__explore:hover {
   filter: brightness(1.15);
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.5);
 
 }
+
 .btn__order {
   background: linear-gradient(to top, #9356dc, #FF79DA);
   width: 12em;
   height: 3.5em;
 }
+
 .btn__order:hover {
   filter: brightness(1.15);
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.5);
 }
+
 .btn__check {
   width: 4.5em;
   height: 100%;
@@ -107,10 +107,12 @@ ul {
   margin-bottom: 20px;
   box-sizing: border-box;
 }
+
 .card img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 .card__fonctionnement {
   display: flex;
   align-items: center;
@@ -121,46 +123,57 @@ ul {
   background-color: #f7f7f7;
   transition: all 0.5s ease-in-out;
 }
+
 .card__fonctionnement:hover {
   background-color: #F5EDFF;
 }
+
 .card__fonctionnement:hover svg {
   fill: #9356dc;
 }
+
 .card__fonctionnement__content {
   display: flex;
   align-items: center;
   width: 100%;
 }
+
 .card__fonctionnement__content span {
   margin-left: -0.5em;
 }
+
 .card__fonctionnement__content svg {
   margin-left: 1.2em;
 }
+
 .card__fonctionnement__content p {
   margin-left: 10%;
 }
+
 .card__restaurant {
   width: 90%;
   height: 18em;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
+
 .card__restaurant__content {
   position: relative;
 }
+
 .card__restaurant__content img {
   z-index: 1;
   width: 100%;
   height: 13em;
   border-radius: 15px 15px 0 0;
 }
+
 .card__restaurant__content span {
   position: absolute;
   z-index: 2;
   top: 3%;
   right: 3%;
 }
+
 .card__restaurant__content__text {
   display: flex;
   flex-direction: row;
@@ -168,19 +181,23 @@ ul {
   justify-content: space-between;
   margin: -0.25em 2em 0 1em;
 }
+
 .card__restaurant__content__text p {
   line-height: 24px;
   font-weight: 300;
 }
+
 .card__restaurant__content__text__icons {
   position: relative;
   right: 5%;
   top: -2vh;
 }
+
 .card__restaurant__content__text__icons:hover .heart-full {
   animation: heart-animation 0.5s;
   opacity: 1;
 }
+
 .card__menu {
   width: 95%;
   display: flex;
@@ -189,16 +206,26 @@ ul {
   height: 4.5em;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
+
 .card__menu__btn {
   height: 100%;
   opacity: 0;
-  transition: all 0.5s;
 }
+
+.card__menu .card__menu__btn {
+  transition: transform 0.5s, opacity 1s;
+  transform: translateX(70px);
+  opacity: 0;
+  padding-left: 10px;
+}
+
 .card__menu:hover .card__menu__btn {
-  animation: slideLeft 2s;
+  transform: translateX(0px);
   opacity: 1;
 }
+
 .card__menu p {
   position: relative;
   top: 22%;
@@ -212,13 +239,16 @@ ul {
   white-space: nowrap;
   font-weight: 300;
 }
+
 .card__menu p strong {
   font-size: 18px;
   font-weight: 500;
 }
+
 .card__menu:hover p {
   padding-right: 5em;
 }
+
 .card__menu span {
   position: relative;
   font-size: 15px;
@@ -226,6 +256,7 @@ ul {
   top: 18%;
   transition: all 0.5s;
 }
+
 .card__menu:hover span {
   transform: translateX(-3.4em);
   animation: loading 1s ease-in-out;
@@ -249,6 +280,7 @@ ul {
   background-color: #99e2d0;
   color: #008766;
 }
+
 .rectangle__small {
   width: 7em;
   height: 2em;
@@ -261,9 +293,11 @@ form {
   justify-content: center;
   align-items: center;
 }
+
 form i {
   color: black;
 }
+
 form input[type=search] {
   font-weight: bold;
   color: black;
@@ -275,9 +309,11 @@ form input[type=search] {
   background-color: #eaeaea;
   font-size: 16px;
 }
+
 form input[type=search]::-moz-placeholder {
   color: black;
 }
+
 form input[type=search]::placeholder {
   color: black;
 }
@@ -293,6 +329,7 @@ svg {
   fill: #353535;
   transition: all 0.5s ease-in-out;
 }
+
 .heart:hover {
   opacity: 0;
 }
@@ -357,10 +394,12 @@ svg {
   justify-content: center;
   align-items: center;
 }
+
 .header__logo {
   width: 180px;
   margin: 1em 0 1em 0;
 }
+
 .header a {
   position: absolute;
   left: 5%;
@@ -373,6 +412,7 @@ svg {
   flex-direction: column;
   padding: 0em 0 3em 2em;
 }
+
 .footer-container h3 {
   font-family: Shrikhand;
   font-size: 26px;
@@ -380,14 +420,17 @@ svg {
   font-style: italic;
   margin-bottom: 10px;
 }
+
 .footer-container ul li {
   display: flex;
   align-items: center;
   line-height: 1px;
 }
+
 .footer-container ul li svg {
   padding-right: 10px;
 }
+
 .footer-container ul li a {
   margin-top: 12px;
 }
@@ -408,14 +451,17 @@ svg {
   background-color: #f7f7f7;
   padding: 15px 0 55px 0;
 }
+
 .explore-container div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .explore-container h2 {
   width: 70%;
 }
+
 .explore-container p {
   width: 85%;
   font-size: 18px;
@@ -428,16 +474,19 @@ svg {
   flex-direction: column;
   padding: 20px 0 40px 0;
 }
-.fonctionnement-container > div {
+
+.fonctionnement-container>div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .fonctionnement-container h2 {
   padding-left: 5%;
   margin-top: 35px;
   margin-bottom: 30px;
 }
+
 .fonctionnement-container p {
   font-weight: 500;
 }
@@ -449,11 +498,13 @@ svg {
   padding-top: 15px;
   padding-bottom: 50px;
 }
-.restaurants-container > div {
+
+.restaurants-container>div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .restaurants-container h2 {
   padding-left: 5%;
   margin-top: 35px;
@@ -464,14 +515,17 @@ svg {
   display: flex;
   flex-direction: column;
 }
+
 .restaurant-container__image {
   width: 100%;
   height: 17em;
 }
+
 .restaurant-container__image img {
   width: 100%;
   height: 18em;
 }
+
 .restaurant-container__menu {
   background-color: #f7f7f7;
   padding-top: 10px;
@@ -479,6 +533,7 @@ svg {
   padding-bottom: 40px;
   border-radius: 30px 30px 0 0;
 }
+
 .restaurant-container__menu__tittle {
   position: relative;
   display: flex;
@@ -486,22 +541,27 @@ svg {
   justify-content: start;
   align-items: center;
 }
+
 .restaurant-container__menu__tittle h1 {
   margin-left: 5%;
 }
+
 .restaurant-container__menu__tittle__icons {
   position: absolute;
   right: 15%;
   top: 35%;
 }
+
 .restaurant-container__menu__tittle__icons:hover .heart-full {
   animation: heart-animation 0.5s ease-out;
   opacity: 1;
 }
+
 .restaurant-container__menu__box {
   display: flex;
   flex-direction: column;
 }
+
 .restaurant-container__menu__box h3 {
   margin-left: 5%;
   padding-bottom: 0.5em;
@@ -512,21 +572,26 @@ svg {
   background-position: 0 1.2em;
   background-repeat: no-repeat;
 }
-.restaurant-container__menu__box > div {
+
+.restaurant-container__menu__box>div {
   display: flex;
   flex-direction: column;
   align-items: center;
   animation: slideDown 2s;
 }
-.restaurant-container__menu__box > div:nth-of-type(2) {
+
+.restaurant-container__menu__box>div:nth-of-type(2) {
   animation-delay: 0.4s;
 }
-.restaurant-container__menu__box > div:nth-of-type(3) {
+
+.restaurant-container__menu__box>div:nth-of-type(3) {
   animation-delay: 0.8s;
 }
-.restaurant-container__menu__box > div:nth-of-type(4) {
+
+.restaurant-container__menu__box>div:nth-of-type(4) {
   animation-delay: 1.6s;
 }
+
 .restaurant-container__menu__btn {
   display: flex;
   flex-direction: row;
@@ -539,15 +604,18 @@ svg {
   .header {
     height: 5em;
   }
+
   .footer-container {
     flex-direction: row-reverse;
     align-items: center;
   }
+
   .footer-container h3 {
     position: relative;
     top: 20px;
     right: 25px;
   }
+
   .footer-container ul {
     display: flex;
     flex-direction: row;
@@ -557,79 +625,99 @@ svg {
     top: 30px;
     right: 2%;
   }
+
   .footer-container a {
     margin-bottom: 12px;
   }
+
   .location-container {
     box-shadow: none;
   }
+
   .explore-container h2 {
     font-size: 30px;
   }
-  .fonctionnement-container > div {
+
+  .fonctionnement-container>div {
     flex-direction: row;
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
   }
+
   .fonctionnement-container h2 {
     margin-left: 2vw;
   }
-  .restaurants-container > div {
+
+  .restaurants-container>div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 20px;
     place-items: center;
   }
+
   .restaurants-container h2 {
     margin-left: 1vw;
   }
+
   .restaurant-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .restaurant-container__menu {
     width: 80%;
   }
+
   .restaurant-container__menu__tittle {
     width: 100%;
     display: flex;
     justify-content: center;
   }
+
   .restaurant-container__menu__tittle h1 {
     margin-right: 12%;
   }
+
   .restaurant-container__menu__tittle__icons {
     margin-right: 20%;
   }
+
   .restaurant-container__menu__box h3 {
     margin-left: 17%;
   }
+
   .card__fonctionnement {
     width: 20em;
     height: 4em;
   }
+
   .card__restaurant {
     width: 37vw;
     height: 270px;
   }
+
   .card__restaurant img {
     height: 200px;
   }
+
   .card__restaurant p {
     margin: 0;
     margin-top: 0.6em;
   }
+
   .card__menu {
     width: 65%;
   }
+
   .card__menu:hover span {
     transform: translateX(-7em);
   }
 }
+
 .loader-container {
   display: flex;
   justify-content: center;
@@ -643,6 +731,7 @@ svg {
   -webkit-animation: loading 3s ease-in-out forwards;
   animation: loading 3s ease-in-out forwards;
 }
+
 .loader-container .loader-spinner {
   width: 2rem;
   height: 2rem;
@@ -651,6 +740,7 @@ svg {
   -webkit-animation: grow 1s linear infinite;
   animation: spin 2s linear infinite;
 }
+
 .loader-container .loader-spinner.loader-spinner--actif {
   border: 16px solid #f3f3f3;
   /* Light grey */
@@ -666,30 +756,37 @@ svg {
   0% {
     visibility: visible;
   }
+
   100% {
     visibility: hidden;
   }
 }
+
 @keyframes loading {
   0% {
     visibility: visible;
   }
+
   100% {
     visibility: hidden;
   }
 }
+
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
