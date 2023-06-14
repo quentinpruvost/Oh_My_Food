@@ -791,3 +791,10 @@ svg {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 820px) and (min-width: 760px) {
+
+  .card__menu:hover span {
+    transform: translateX(-7em);
+  }
+}
