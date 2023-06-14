@@ -792,7 +792,7 @@ svg {
   }
 }
 
-@media (max-width: 820px) and (min-width: 760px) {
+@media (max-width: 820px) and (min-width: 650px) {
 
   .card__menu:hover span {
     transform: translateX(-7em);
